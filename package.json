@@ -1,0 +1,43 @@
+{
+  "name": "fichosa-components",
+  "version": "1.0.0",
+  "description": "This is the example",
+  "author": "Fichosa",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "scripts": {
+    "prebuild": "sass --style=compressed src/antd.module.scss:dist/antd.css",
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "start": "microbundle-crl watch --no-compress --format modern,cjs"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^11.2.0",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/aria-query": "^5.0.0",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^25.1.4",
+    "@types/react": "^16.14.29",
+    "@typescript-eslint/parser": "^2.26.0",
+    "@types/node": "^18.6.4",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.0.3",
+    "es6": "^0.0.7",
+    "microbundle-crl": "^0.13.8",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^3.4.1",
+    "sass": "^1.53.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "antd": "3.26.7"
+  }
+}
