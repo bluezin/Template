@@ -1,6 +1,6 @@
 {
   "name": "@bluezin/components",
-  "version": "1.1.0",
+  "version": "1.6.0",
   "description": "This is the example",
   "author": "bluezin",
   "license": "MIT",
@@ -12,7 +12,7 @@
     "url": "https://github.com/bluezin/Template.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "prebuild": "sass --style=compressed src/antd.module.scss:dist/antd.css",
