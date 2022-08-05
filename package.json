@@ -1,11 +1,19 @@
 {
-  "name": "fichosa-components",
+  "name": "@fichosa/components",
   "version": "1.0.0",
   "description": "This is the example",
   "author": "Fichosa",
+  "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluezin/Template.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "prebuild": "sass --style=compressed src/antd.module.scss:dist/antd.css",
     "build": "microbundle-crl --no-compress --format modern,cjs",
